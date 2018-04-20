@@ -1,0 +1,572 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* ----------- Global ----------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+}
+
+body {
+    width: 100%;
+    margin: auto;
+}
+
+h1 {
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 70px;
+    color: white;
+}
+
+h1 a {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    line-height: 30px;
+}
+
+h2 a {
+    text-decoration: none;
+    color: white;
+
+}
+
+h3 {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    color: black;
+    line-height: 40px;
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
+h3 a {
+    text-decoration: none;
+    color: black;
+
+}
+
+h3 a:hover {
+    text-decoration: none;
+    font-size: 25px;
+
+}
+
+h4 {
+    font-size: 13px;
+    color: white;
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+}
+
+h4 a {
+    text-decoration: none;
+}
+
+h5 {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    text-align: left;
+    color: black;
+    line-height: 30px;
+    padding: 1rem;
+}
+
+h5 a {
+    text-decoration: none;
+    color: black;
+
+}
+
+h6 {
+    font-size: 15px;
+    text-align: center;
+    padding: 0;
+    margin-left: 20px;
+    margin-top: -20px;
+}
+
+h6 a {
+    text-decoration: none;
+}
+
+p {
+    color: white;
+    font-family: 'Georgia';
+    font-style: italic;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}
+
+p a {
+    text-decoration: none;
+
+}
+
+hr {
+    width: 99%;
+    color: white;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: .5px;
+}
+
+/* ----------- Desktop ------------ */
+
+@media screen and (min-width:1030px) and (max-width: 1599px) {
+
+    /* Newsletter */
+    .newsletter {
+        background-color: #F0CDC4;
+        width: 100%;
+        height: 30px;
+        text-align: center;
+    }
+    .newsletter a {
+        color: black;
+        line-height: 30px;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+    .newsletter a:hover {
+        color: white;
+        transition: 0.3s;
+    }
+    /* ---------- Header ---------- */
+    header {
+        width: 100%;
+        height: 80px;
+        background-color: black;
+        padding-top: 30px;
+        display: flex;
+        top: 0;
+    }
+    /* Logo */
+    .logo {
+        width: 30%;
+        height: 100%;
+        padding-left: 40px;
+        padding-right: 50px;
+    }
+    .logo img {
+        height: auto;
+        width: 250px;
+    }
+
+    .logo img:hover {
+        opacity: 0.9;
+    }
+    /* Nav */
+    .navbar {
+        width: 60%;
+        overflow: hidden;
+        background-color: black;
+    }
+
+    .nav-button {
+        float: right;
+        display: block;
+        text-align: center;
+        padding: 14px 16px;
+    }
+
+    .nav-button a {
+        text-decoration: none;
+        padding: 14px 14px;
+        font-size: 15px;
+        transition: 0.3s;
+        color: white;
+    }
+
+    .nav-button a:hover {
+        color: #F0CDC4;
+        transition: 0.3s;
+    }
+
+    .book-button {
+        float: right;
+        display: block;
+        text-align: center;
+        padding: 14px 16px;
+    }
+
+    .book-button a {
+        text-decoration: none;
+        font-weight: 400;
+        transition: 0.3s;
+        padding: 10px 16px;
+        border: solid 1px #F0CDC4;
+        color: #F0CDC4;
+    }
+
+    .book-button a:hover {
+        background: #F0CDC4;
+        color: black;
+        transition: 0.3s;
+    }
+
+    .hamburgericon {
+        display: none;
+    }
+
+    .hamburgericon a {
+        display: none;
+    }
+
+    .hamburgericon a:hover {
+        display: none;
+    }
+
+    /* ---------- Hero ---------- */
+    .hero {
+        width: 100%;
+        display: flex;
+        background-color: black;
+    }
+    /* Hero Image */
+    .heroimage {
+        width: 50%;
+        height: auto;
+
+    }
+    .heroimage img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: flex;
+    }
+
+    .hero-text {
+        display: none;
+    }
+
+    /* ---------- Find a Salon ---------- */
+    .findsalon {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+    }
+    .box {
+        height: 180px;
+        width: 300px;
+        line-height: 25px;
+        background-color: #F0CDC4;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 200px;
+        padding: 2rem;
+        text-align: center;
+    }
+    .box a {
+        color: white;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+    .box a:hover {
+        color: black;
+        transition: 0.3s;
+    }
+
+    .hide {
+        display: none;
+    }
+    .chevron {
+        display: none;
+    }
+
+    /* ---------- Find a Salon Mobile ---------- */
+    .findsalonmobile {
+        display: none;
+    }
+    .box1 {
+        display: none;
+    }
+    .box1 a {
+        display: none;
+    }
+    .box1 a:hover {
+        display: none;
+    }
+
+    /* ----------- Services ----------- */
+    .services {
+        width: 50%;
+        height: auto;
+        padding-top: 40px;
+        padding-right: 40px;
+        background-color: black;
+        text-align: right;
+        display: block;
+    }
+    .wrapper {
+        padding-top: 20px;
+        width: 410px;
+        height: 650px;
+        display: block;
+        margin-left: 20%;
+    }
+    .services-row {
+        width: 100%;
+        height: 200px;
+        background-color: black;
+        display: flex;
+        align-content: space-around;
+    }
+    .thumbnail {
+        background-color: white;
+        width: 200px;
+        height: 195px;
+        display: block;
+        margin: auto;
+    }
+    .thumbnail-text {
+        background-color: white;
+        text-align: left;
+        width: 200px;
+        height: 195px;
+        display: block;
+        margin: auto;
+        position: relative;
+        z-index: 2;
+    }
+    .thumbnail img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 0.3s;
+    }
+    .thumbnail img:hover {
+        opacity: 0.5;
+        transition: 0.3s;
+    }
+    .thumbnail-text:hover {
+        background-color: #F0CDC4;
+        transition: 0.3s;
+    }
+
+    /* ----------- Testimonials ----------- */
+    .testimonials {
+        background-color: #F0CDC4;
+        width: 100%;
+        height: 500px;
+        display: flex;
+        justify-content: space-around;
+    }
+    /* Reviews */
+    .review {
+        background-color: white;
+        height: 350px;
+        width: 25%;
+        text-align: center;
+        margin: auto;
+        display: block;
+    }
+    .review p {
+        color: black;
+        font-size: 20px;
+        padding: 50px;
+    }
+
+    /* ----------- Gallery ----------- */
+    .gallery {
+        padding-top: 50px;
+        padding-bottom: 0px;
+        background-color: white;
+        height: 260px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    /* Gallery Images */
+    .gallery-images {
+        height: 250px;
+        width: 250px;
+    }
+    .gallery-images img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        display: flex;
+        transition: 0.3s;
+    }
+    .gallery-images img:hover {
+        opacity: 0.5;
+        transition: 0.3s;
+    }
+    .gallery2 {
+        padding-top: 30px;
+        padding-bottom: 40px;
+        background-color: white;
+        height: 260px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    /* Gallery Images */
+    .gallery-images2 {
+        height: 250px;
+        width: 250px;
+    }
+    .gallery-images2 img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        display: flex;
+        transition: 0.3s;
+    }
+    .gallery-images2 img:hover {
+        opacity: 0.5;
+        transition: 0.3s;
+    }
+
+    /* ----------- Footer ----------- */
+    footer {
+        background-color: black;
+        width: 100%;
+        height: 300px;
+    }
+    /* Footer Logo */
+    .footerlogo {
+        background-color: black;
+        width: 100%;
+        height: 50%;
+    }
+    .footerlogo img {
+        padding: 50px;
+        width: 150px;
+    }
+    .footerlogo img:hover {
+        opacity: 0.9;
+    }
+
+    /* Lower footer */
+    .lowerfooter {
+        background-color: black;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    /* Links */
+    .links {
+        background-color: black;
+        width: 20%;
+        height: auto;
+        font-size: 12px;
+        line-height: 20px;
+        padding-left: 50px;
+        display: block;
+    }
+    .links ul a {
+        text-decoration: none;
+        color: #F0CDC4;
+        transition: 0.3s;
+    }
+    .links ul a:hover {
+        text-decoration: none;
+        color: white;
+        transition: 0.3s;
+    }
+    /* Sign up */
+    .signup {
+        background-color: black;
+        width: 30%;
+        height: auto;
+        display: block;
+        text-align: center;
+        line-height: 50px;
+    }
+    input[type=text] {
+        width: 60%;
+        font-size: 10px;
+        color: lightslategrey;
+        padding: 10px 10px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: none;
+        background-color: white;
+        border-bottom: 2px solid #F0CDC4;
+    }
+    .button {
+        display: inline;
+        border: solid #F0CDC4;
+        border-width: thin;
+        color: white;
+        padding: 10px 16px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 12px;
+        margin: 4px 0px;
+        border-radius: 10px;
+        transition: 0.3s;
+    }
+    .button:hover {
+        background-color: #F0CDC4;
+        color: black;
+        border: solid #F0CDC4;
+        border-width: thin;
+        transition: 0.3s;
+    }
+
+    /* Social */
+    .social {
+        background-color: black;
+        width: 20%;
+        height: auto;
+        display: block;
+        text-align: right;
+        padding-right: 50px;
+        padding-top: 20px;
+    }
+    .social img {
+        padding-left: 10px;
+        width: 50px;
+        transition: 0.3s;
+    }
+    .social img:hover {
+        opacity: 0.5;
+        transition: 0.3s;
+    }
+
+    /* Copyright */
+    .copyright {
+        background-color: black;
+        width: 100%;
+        height: 50px;
+        text-align: center;
+    }
+}

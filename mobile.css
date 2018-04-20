@@ -1,0 +1,383 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* ----------- Mobile ------------ */
+
+@media screen and (max-width: 767px) {
+
+    /* ---------- Newsletter ---------- */
+    .newsletter {
+        display: none;
+    }
+
+    /* ---------- Header ---------- */
+    header {
+        width: 100%;
+        height: 90px;
+        background-color: black;
+        position: fixed;
+        display: flex;
+        top: 0;
+    }
+    /* Logo */
+    .logo {
+        width: 60%;
+        height: 100%;
+    }
+    .logo img {
+        padding: 25px;
+        width: 200px;
+    }
+    /* Nav */
+    .navbar {
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+        background-color: black;
+        position: fixed;
+        z-index: 4;
+        right: -70%;
+        top: 90px;
+        transition: 0.3s;
+
+    }
+
+    .nav-button {
+        width: 85%;
+        float: right;
+        display: block;
+        text-align: center;
+        padding: 14px 16px;
+    }
+
+    .responsive {
+        right: 0%;
+        transition: 0.3s;
+    }
+
+    .nav-button a {
+        text-decoration: none;
+        padding: 14px 14px;
+        font-size: 15px;
+        transition: 0.3s;
+        color: white;
+    }
+
+    .nav-button a:hover {
+        color: #F0CDC4;
+        transition: 0.3s;
+    }
+
+    .book-button {
+        width: 85%;
+        float: right;
+        display: block;
+        text-align: center;
+        padding: 14px 16px;
+    }
+
+    .book-button a {
+        text-decoration: none;
+        font-weight: 400;
+        transition: 0.3s;
+        padding: 10px 16px;
+        border: solid 1px #F0CDC4;
+        color: #F0CDC4;
+    }
+
+    .book-button a:hover {
+        background: #F0CDC4;
+        color: white;
+        transition: 0.3s;
+    }
+
+    .hamburgericon {
+        position: fixed;
+        padding-right: 20px;
+        top: 20px;
+        right: 0;
+        z-index: 4;
+        width: 40px;
+        height: 40px;
+        color: white;
+        float: right;
+        display: block;
+        text-align: center;
+        font-size: 30px;
+        transition: 0.3s;
+    }
+
+    .hamburgericon:hover {
+        text-decoration: none;
+        color: #F0CDC4;
+        transition: 0.3s;
+    }
+
+    /* ---------- Hero ---------- */
+    .hero {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-top: 90px;
+    }
+    .heroimage {
+        width: 100%;
+        height: auto;
+        float: left;
+        overflow: hidden;
+    }
+    .heroimage img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: flex;
+    }
+
+    .hero-text {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(218, 250, 248, 0.7);
+        opacity: 0;
+        transition: 0.5s;
+        line-height: 700px;
+    }
+
+    /* ---------- Services ---------- */
+    .services {
+        width: 100%;
+        height: auto;
+        padding-top: 40px;
+        background-color: black;
+        text-align: center;
+        display: block;
+    }
+    .wrapper {
+        padding-top: 20px;
+        width: 90%;
+        height: 650px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .services-row {
+        width: 100%;
+        height: 200px;
+        background-color: black;
+        display: flex;
+        align-content: space-around;
+    }
+    .thumbnail {
+        background-color: white;
+        width: 45%;
+        height: 95%;
+        display: block;
+        margin: auto;
+    }
+    .thumbnail-text {
+        background-color: white;
+        text-align: left;
+        width: 50%;
+        height: 95%;
+        display: block;
+        margin: auto;
+    }
+    .thumbnail img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 0.3s;
+    }
+    .thumbnail img:hover {
+        opacity: 0.5;
+        transition: 0.3s;
+    }
+    .thumbnail-text:hover {
+        background-color: #F0CDC4;
+        transition: 0.3s;
+    }
+
+    /* ---------- Find a Salon Mobile ---------- */
+    .findsalonmobile {
+        background-color: #A1A1A1;
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    .box1 {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 25px;
+        text-align: center;
+        padding: 2rem;
+    }
+    .box1 a {
+        color: white;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+    .box1 a:hover {
+        color: black;
+        transition: 0.3s;
+    }
+
+    /* ---------- Find a Salon  ---------- */
+    .findsalon {
+        display: none;
+    }
+
+    /* ----------- Testimonials ----------- */
+    .testimonials {
+        background-color: #F0CDC4;
+        width: 100%;
+        height: 1000px;
+        display: grid;
+    }
+    /* Reviews */
+    .review {
+        background-color: white;
+        height: auto;
+        width: 90%;
+        text-align: center;
+        align-content: center;
+        margin: auto;
+        display: block;
+    }
+    .review p {
+        background-color: white;
+        color: black;
+        font-size: 20px;
+        padding: 50px;
+    }
+    .review img {
+        padding-bottom: 10px;
+    }
+
+    /* ----------- Gallery ----------- */
+    .gallery {
+        background-color: white;
+        width: 100%;
+        height: auto;
+    }
+    .gallery2 {
+        display: none;
+    }
+    /* Gallery Images */
+    .gallery-images {
+        height: 30%;
+        width: 100%;
+    }
+    .gallery-images img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        display: flex;
+    }
+
+    /* ----------- Footer ----------- */
+    footer {
+        background-color: black;
+        width: 100%;
+        height: auto;
+    }
+    /* Logo */
+    .footerlogo {
+        background-color: black;
+        width: 100%;
+        height: 50%;
+    }
+    .footerlogo img {
+        display: none;
+    }
+
+    /* Lower footer */
+    .lowerfooter {
+        background-color: black;
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .links {
+        width: auto;
+        height: auto;
+        text-align: center;
+        font-size: 12px;
+        line-height: 20px;
+        padding-top: 10px;
+    }
+    .links ul a {
+        text-decoration: none;
+        color: #F0CDC4;
+        transition: 0.3s;
+    }
+    .links ul a:hover {
+        text-decoration: none;
+        color: white;
+        transition: 0.3s;
+    }
+
+    /* Sign up */
+    .signup {
+        width: auto;
+        height: auto;
+        display: block;
+        text-align: center;
+        line-height: 50px;
+        padding-top: 30px;
+    }
+    input[type=text] {
+        width: 40%;
+        font-size: 10px;
+        color: lightslategrey;
+        padding: 10px 10px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: none;
+        background-color: white;
+        border-bottom: 2px solid #F0CDC4;
+    }
+    .button {
+        display: inline;
+        border: solid #F0CDC4;
+        border-width: thin;
+        color: white;
+        padding: 10px 16px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 12px;
+        margin: 4px 0px;
+        border-radius: 10px;
+        transition: 0.3s;
+    }
+    .button:hover {
+        background-color: #F0CDC4;
+        color: black;
+        border: solid #F0CDC4;
+        border-width: thin;
+        transition: 0.3s;
+    }
+
+    /* Social */
+    .social {
+        text-align: center;
+        background-color: black;
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .social img {
+        padding-left: 10px;
+        width: 50px;
+        transition: 0.3s;
+    }
+    .social img:hover {
+        opacity: 0.5;
+        transition: 0.3s;
+    }
+
+    /* Copyright */
+    .copyright {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+}
